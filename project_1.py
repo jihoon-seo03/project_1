@@ -23,10 +23,6 @@ st.set_page_config(
 st.markdown("""
 <style>
     .main .block-container { padding-top: 1rem; }
-    div[data-testid="stMetric"] {
-        background: #f8fafc; border-radius: 10px;
-        padding: 12px 16px; border: 1px solid #e2e8f0;
-    }
 </style>
 """, unsafe_allow_html=True)
 
