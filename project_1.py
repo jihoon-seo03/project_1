@@ -156,7 +156,7 @@ st.sidebar.title("🏭 파라미터 설정")
 
 # 수요 입력 (동적 월 수)
 st.sidebar.header("📊 수요 예측")
-n_months = st.sidebar.slider("계획 기간 (개월)", 2, 12, 6)
+n_months = st.sidebar.slider("계획 기간 (개월)", 0, 12, 6)
 
 default_demands = [1600, 3000, 3200, 3800, 2200, 2200, 2000, 2000, 2000, 2000, 2000, 2000]
 
