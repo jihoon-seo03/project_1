@@ -227,6 +227,13 @@ params = {
 # 최적화 실행
 # ──────────────────────────────────────────────────────────
 method = 'IP' if 'IP' in solve_method else 'LP'
+
+if n_months == 0:
+    st.title("🏭 총괄생산계획 최적화")
+    st.caption("원예장비 제조업체 · Aggregate Production Planning Optimizer")
+    st.info("📊 좌측 사이드바에서 계획 기간을 1개월 이상으로 설정하세요.")
+    st.stop()
+    
 result = solve_app(demand, params, method)
 
 # ──────────────────────────────────────────────────────────
