@@ -161,11 +161,10 @@ n_months = st.sidebar.slider("계획 기간 (개월)", 2, 12, 6)
 default_demands = [1600, 3000, 3200, 3800, 2200, 2200, 2000, 2000, 2000, 2000, 2000, 2000]
 
 # 프리셋
-preset = st.sidebar.selectbox("프리셋 선택", ["직접 입력", "6개월 기본예제", "8개월 변동예제"])
-if preset == "6개월 기본예제":
+# 프리셋
+preset = st.sidebar.selectbox("프리셋", ["6개월(default)", "직접 입력"])
+if preset == "6개월(default)":
     default_demands = [1600, 3000, 3200, 3800, 2200, 2200] + [2000]*6
-elif preset == "8개월 변동예제":
-    default_demands = [1600, 5000, 3200, 5800, 2200, 2200, 6500, 2300] + [2000]*4
 
 demand = []
 cols = st.sidebar.columns(3)
